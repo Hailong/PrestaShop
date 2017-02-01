@@ -497,12 +497,14 @@
 			{include file="$tpl_dir./product-list.tpl" products=$packItems}
 		</section>
 		{/if}
+		{if (isset($HOOK_PRODUCT_TAB) && $HOOK_PRODUCT_TAB) || (isset($HOOK_PRODUCT_TAB_CONTENT) && $HOOK_PRODUCT_TAB_CONTENT)}
 		<!--HOOK_PRODUCT_TAB -->
 		<section class="page-product-box">
 			{$HOOK_PRODUCT_TAB}
 			{if isset($HOOK_PRODUCT_TAB_CONTENT) && $HOOK_PRODUCT_TAB_CONTENT}{$HOOK_PRODUCT_TAB_CONTENT}{/if}
 		</section>
 		<!--end HOOK_PRODUCT_TAB -->
+		{/if}
 		{if isset($accessories) && $accessories}
 			<!--Accessories -->
 			<section class="page-product-box">
@@ -525,7 +527,7 @@
 											</div>
 										</div>
 										<div class="s_title_block">
-											<h5 itemprop="name" class="product-name">
+											<h5 class="product-name">
 												<a href="{$accessoryLink|escape:'html':'UTF-8'}">
 													{$accessory.name|truncate:20:'...':true|escape:'html':'UTF-8'}
 												</a>

@@ -576,7 +576,9 @@ class ToolsCore
     public static function getCountry($address = null)
     {
         $id_country = (int)Tools::getValue('id_country');
-        if (!$id_country && isset($address) && isset($address->id_country) && $address->id_country) {
+        if ($id_country && Validate::isInt($id_country)) {
+            return (int)$id_country;
+        } elseif (!$id_country && isset($address) && isset($address->id_country) && $address->id_country) {
             $id_country = (int)$address->id_country;
         } elseif (Configuration::get('PS_DETECT_COUNTRY') && isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
             preg_match('#(?<=-)\w\w|\w\w(?!-)#', $_SERVER['HTTP_ACCEPT_LANGUAGE'], $array);
@@ -2510,7 +2512,7 @@ class ToolsCore
         fwrite($write_fd, "AddType application/x-font-woff .woff\n");
         fwrite($write_fd, "<IfModule mod_headers.c>
 	<FilesMatch \"\.(ttf|ttc|otf|eot|woff|svg)$\">
-		Header add Access-Control-Allow-Origin \"*\"
+		Header set Access-Control-Allow-Origin \"*\"
 	</FilesMatch>
 </IfModule>\n\n");
 

@@ -10,6 +10,7 @@ GitHub contributors:
 - Aleksander Palyan
 - Alessandro Corbelli
 - Alex Even
+- Alex Sampaio
 - Alexander Grosul
 - Alexander Otchenashev
 - Alexandra Even
@@ -49,6 +50,7 @@ GitHub contributors:
 - cam.lafit
 - Captain FLAM
 - Captain-FLAM
+- Casper Olsen
 - ccauw
 - cedricfontaine
 - cedricgeffroy
@@ -62,6 +64,7 @@ GitHub contributors:
 - CINS
 - cippest
 - Claire Meuriot
+- Claudio Venturini
 - cmouleyre
 - codvir
 - Comkwatt
@@ -73,6 +76,7 @@ GitHub contributors:
 - Damien Metzger
 - Damien PIQUET
 - DamienMetzger
+- damien_low
 - Damon Skelhorn
 - Dan Hlavenka
 - danidomen
@@ -87,6 +91,7 @@ GitHub contributors:
 - David-Julian BUCH
 - Davide
 - Davy Rolink
+- Debusschere Alexandre
 - Denver Prophit Jr.
 - Desbouche Christophe
 - DevNet
@@ -135,6 +140,7 @@ GitHub contributors:
 - Francois-Marie de Jouvencel
 - Fran�ois Gaillard
 - Frederic BENOIST
+- Gabriel Arama
 - Gabriel Schwardy
 - Gaelle ITZKOVITZ
 - Gamesh
@@ -159,6 +165,7 @@ GitHub contributors:
 - harelguy
 - hiousi
 - htrex
+- hubiktomas
 - Ian Fung
 - idnovate
 - indesign47
@@ -200,6 +207,7 @@ GitHub contributors:
 - julvernois
 - Jachym Tousek
 - Kamil Szymański
+- Karel Faille
 - Kelly Karnetsky
 - kermes
 - Kevin Granger
@@ -249,6 +257,7 @@ GitHub contributors:
 - Mehdi BOUZIDI
 - Michael Dekker
 - Michael Hjulskov
+- Michel ANTOINE
 - Michel Courtade
 - Mickael Desgranges
 - Mickael Andrieu
@@ -267,6 +276,7 @@ GitHub contributors:
 - nezenmoins
 - Nicolas Martin
 - Nicolas Sorosac
+- Nigel Helliwell
 - Niklas Ekman
 - Niko Wicaksono
 - Nils-Helge Garli Hegvik
@@ -276,6 +286,7 @@ GitHub contributors:
 - nturato
 - okom3pom
 - oleacorner
+- Olivier Monaco
 - Otto Nascarella
 - Pan P
 - Pan P.
@@ -319,11 +330,14 @@ GitHub contributors:
 - Raphael Droz
 - Raphael Malie
 - raulgundin
+- remoteshaman.com
+- Renaud Sanchez - ChouetteWeb.fr
 - rGaillard
 - Rhys
 - Richard LT
 - Rimas Kudelis
 - robert
+- roja45
 - Roland Schütz
 - romainberger
 - Roy
@@ -340,6 +354,7 @@ GitHub contributors:
 - Sarah Lorenzini
 - Seb
 - SebSept
+- Sergio Quinonez
 - Seynaeve
 - sfroment42
 - shaffe-fr
@@ -370,8 +385,10 @@ GitHub contributors:
 - Sebastien Monterisi
 - Tanguy JACQUET
 - tchauviere
+- thecb1
 - therampagerado
 - Thibaud Chauviere
+- Thierry Marianne
 - thoma202
 - Thomas
 - Thomas Blanc
@@ -385,6 +402,7 @@ GitHub contributors:
 - Tom Panier
 - Tomasz Slominski
 - Tomas Votruba
+- tonyyb
 - tucoinfo
 - Tung Dao
 - unlocomqx
@@ -411,6 +429,7 @@ GitHub contributors:
 - zimmi1
 - ZiZuu.com
 - Zollner Robert
+- Sarūnas Jonusas
 
 SVN contributors:
 --------------------------------

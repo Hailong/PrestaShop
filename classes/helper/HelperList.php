@@ -593,7 +593,11 @@ class HelperListCore extends Helper
                 $params['type'] = 'text';
             }
 
-            $value_key = $prefix.$this->list_id.'Filter_'.(array_key_exists('filter_key', $params) && $key != 'active' ? $params['filter_key'] : $key);
+            $value_key = $prefix.$this->list_id.'Filter_'.(array_key_exists('filter_key', $params) ? $params['filter_key'] : $key);
+            if ($key == 'active' && strpos($key, '!') !== false) {
+                $keys = explode('!', $params['filter_key']);
+                $value_key = $keys[1];
+            }
             $value = Context::getContext()->cookie->{$value_key};
             if (!$value && Tools::getIsset($value_key)) {
                 $value = Tools::getValue($value_key);
@@ -668,7 +672,6 @@ class HelperListCore extends Helper
             'pagination' => $this->_pagination,
             'list_total' => $this->listTotal,
             'sql' => isset($this->sql) && $this->sql ? str_replace('\n', ' ', str_replace('\r', '', $this->sql)) : false,
-            'token' => $this->token,
             'table' => $this->table,
             'bulk_actions' => $this->bulk_actions,
             'show_toolbar' => $this->show_toolbar,
@@ -698,7 +701,8 @@ class HelperListCore extends Helper
             'name' => isset($name) ? $name : null,
             'name_id' => isset($name_id) ? $name_id : null,
             'row_hover' => $this->row_hover,
-            'list_id' => isset($this->list_id) ? $this->list_id : $this->table
+            'list_id' => isset($this->list_id) ? $this->list_id : $this->table,
+            'token' => $this->token,
         ), $this->tpl_vars));
 
         return $this->header_tpl->fetch();
@@ -743,7 +747,8 @@ class HelperListCore extends Helper
 
         $this->footer_tpl->assign(array_merge($this->tpl_vars, array(
             'current' => $this->currentIndex,
-            'list_id' => $this->list_id
+            'list_id' => $this->list_id,
+            'token' => $this->token,
         )));
         return $this->footer_tpl->fetch();
     }
